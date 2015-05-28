@@ -1,0 +1,3 @@
+#!/bin/bash
+docker rmi -f container-init
+gcc scl-container-init.c -o scl-container-init && docker build -t container-init .
